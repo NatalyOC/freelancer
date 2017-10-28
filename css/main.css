@@ -1,3 +1,82 @@
-/*
- * Estilos de tu proyecto
- */
+/* setear archivos */
+/*Establecemos el ancho y tipo de letra por medio de el selector de etiqueta*/
+body{
+    /* hacemos que el ancho espeficado sea equivalente al ancho total */
+    box-sizing: border-box;
+    /* establecemos el tipo de letra */
+    font-family: 'Montserrat', sans-serif,'Lato', sans-serif;
+    text-align: left;
+}
+
+.text-uppercase-bold{
+       font-weight: 700;
+       text-transform: uppercase;
+   }
+/*Estilo para el Header*/
+header{
+   border:2px dashed blue;
+   position:fixed;
+   width: 100%;
+   top: 0;
+   left:0;
+   height: 108px;
+   z-index:999;
+   background: #2c3e50;
+}
+nav{
+       border:1px dashed blue;
+       width: 100%;
+       height: 100%; 
+       position: relative;
+       padding: 25px 25px 16px 16px
+}
+.logo-header{
+       border:1px dashed red;
+       position: absolute;
+       left:20%;
+       
+       padding-right: 15px;
+       padding-left: 15px;
+       margin-right: auto;
+       margin-left: auto;
+
+       /* https://www.cssblog.es/css-position-propiedad/ */
+}
+.header-main{
+       border:1px dashed red;
+       position: absolute;
+       right: 7%;
+       
+       
+}
+ul{
+list-style: none;
+top:50px;
+}
+.header-main li{
+          
+      border: 1px dashed black;
+      display: inline-block;
+     
+      list-style: none;
+      left: 0;
+      
+}
+/*Establecemos el color blanco para la etiqueta a del menú por medio de selectores*/
+.header-main a{
+    color:#fff;
+}
+h1>a{
+    top:50px;
+    text-decoration: none;
+    color:#fff;
+}
+li>a{
+    top:50px;
+    text-decoration: none;
+    color:#fff;
+}
+/* Establecemos el cambio de color al pasar el mouse por el enlace del menu por medio de la pseudo-clase:hover */
+li>a:hover{
+    color:#18bc9c;
+}
