@@ -4,13 +4,16 @@ body{
     /* hacemos que el ancho espeficado sea equivalente al ancho total */
     box-sizing: border-box;
     /* establecemos el tipo de letra */
-    font-family: 'Montserrat', sans-serif,'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: left;
+    
 }
-
+/* Clase reutilizable*/
 .text-uppercase-bold{
+       font-family: 'Montserrat';
        font-weight: 700;
        text-transform: uppercase;
+       text-align: center;
    }
 /*Estilo para el Header*/
 header{
@@ -31,10 +34,11 @@ nav{
        padding: 25px 25px 16px 16px
 }
 .logo-header{
-       border:1px dashed red;
+       /* border:1px dashed red; */
        position: absolute;
        left:20%;
-       
+       top:5%;
+       font-size:1.2em;
        padding-right: 15px;
        padding-left: 15px;
        margin-right: auto;
@@ -43,7 +47,7 @@ nav{
        /* https://www.cssblog.es/css-position-propiedad/ */
 }
 .header-main{
-       border:1px dashed red;
+       /* border:1px dashed red; */
        position: absolute;
        right: 7%;
        
@@ -55,11 +59,16 @@ top:50px;
 }
 .header-main li{
           
-      border: 1px dashed black;
+      /* border: 1px dashed black; */
       display: inline-block;
-     
+      
       list-style: none;
       left: 0;
+      top:50px;
+      /* text-decoration: none; */
+      color:#fff;
+      padding-right: .5rem;
+      padding-left: .5rem;
       
 }
 /*Establecemos el color blanco para la etiqueta a del menú por medio de selectores*/
@@ -79,4 +88,160 @@ li>a{
 /* Establecemos el cambio de color al pasar el mouse por el enlace del menu por medio de la pseudo-clase:hover */
 li>a:hover{
     color:#18bc9c;
+}
+/* Estilos para la seccion principal */
+#content-main{
+    border: 2px dashed blueviolet;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: #fff;
+    background: #18bc9c;
+    width: 100%;
+    top:0;
+    left:0;
+    width: 100%;
+   
+}
+.title{
+    font-size: 4.75em;
+    display: block;
+}
+/* Establecemos una linea intermedia por medio del selector de clase */
+.container-main-text hr{
+    border-color: #fff;
+    max-width: 250px;
+    margin: 25px auto 30px;
+    padding: 0;
+    text-align: center;
+    border: none; 
+    border-top: solid 5px;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible; 
+}
+/* hr{
+    display: block;
+    unicode-bidi: isolate;
+    overflow: hidden;
+} */
+hr::after{
+    font-family: FontAwesome;
+    font-size: 2em;
+    position: relative;
+    top: -.6em;
+    display: inline-block;
+    padding: 0 .25em;
+    content: '\f005';
+}
+
+/* Estilos para la seccion portafolio */
+
+
+
+
+/* Establecemos el espacio de relleno para la seccion portafolio*/
+#content-portfolio{
+    padding: 100px 0;
+}
+.container-portfolio{
+    border: 2px dashed blueviolet;
+    width: 100%;
+   
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+.container-portfolio-text h2{
+    font-size: 3em;
+    margin: 0;
+}
+.container-portfolio-img{
+    border: 2px dashed black;
+    margin:0 0 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+    
+}
+.container-portfolio:last-child figure{
+    display: inline-block;
+    text-align: center;
+    border: 2px dashed black;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/* Establecemos el tamaño de las imagenes*/
+img[alt="portfolio"]{
+    border: 2px dashed black;
+    width: 350px;
+    height: 250px;
+} 
+
+/*****************************************/
+/* Estilos para la seccion about */
+#content-about
+{
+    color: #fff;
+    background: #18bc9c;
+    padding: 100px 0;
+}
+/* Establecemos margen y tamaño de la etiqueta h2 */
+.container-about-title h2{
+    font-size: 3em;
+    margin: 0;
+}
+.container-about-text{
+    border: 2px dashed black;
+    /* position: relative;
+    text-align: center; */
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-col-1{
+    border: 2px dashed black;
+    /* top:0;
+    left: 0;
+    display: inline-block;
+    position: absolute;
+    width: 380px;
+    height: 196px; */
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+
+}
+.text-col-2{
+    border: 2px dashed black;
+    top:0;
+    right: 0;
+    display: inline-block;
+    position: absolute;
+    width: 380px;
+    height: 196px;
+
+}
+.container-about-text a{
+    text-decoration: none;
+    text-align: center;
+}
+.container-about-text p{
+    
+    
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    
+    
 }
