@@ -15,15 +15,27 @@ body{
        text-transform: uppercase;
        text-align: center;
    }
+
 /*Estilo para el Header*/
 header{
    border:2px dashed blue;
    position:fixed;
-   width: 100%;
+   /* width: 100%;
    top: 0;
    left:0;
-   height: 108px;
-   z-index:999;
+   height: 108px; */
+   border-left-width: 0px;
+   border-right-width: 0px;
+   border-top-width: 0px;
+   border-bottom-width: 0px;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   padding-right: 18px;
+   padding-left: 18px;
+   right: 0px;
+   z-index: 1000;
+   top: 0;
+   left:0;
    background: #2c3e50;
 }
 nav{
@@ -34,10 +46,11 @@ nav{
        padding: 25px 25px 16px 16px
 }
 .logo-header{
-       /* border:1px dashed red; */
+        border:1px dashed red; 
        position: absolute;
+       height: 100%;
        left:20%;
-       top:5%;
+       top:0;
        font-size:1.2em;
        padding-right: 15px;
        padding-left: 15px;
@@ -269,8 +282,6 @@ img[alt="portfolio"]{
 .text-col-3 a{
     text-decoration: none;
     color: #fff;
-   
-    
     border-radius: 3px;
     border: solid 2px #fff;
     padding-left: 16px;
@@ -295,3 +306,31 @@ img[alt="portfolio"]{
 }
 /*****************************************/
 /* Estilos para la seccion contact me */
+#content-contact{
+    padding: 100px 0;
+}
+.container-contact {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* Establecemos margen y tamaño de la etiqueta h2 */
+.container-contact-title h2{
+    font-size: 3em;
+    margin: 0;
+}
+
+.container-contact-form{
+    min-height: 1px;
+    margin-left: 189px;
+    margin-right: 189px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.form-contact{
+    margin-top: 0em;
+}
