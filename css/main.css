@@ -194,6 +194,15 @@ img[alt="portfolio"]{
     color: #fff;
     background: #18bc9c;
     padding: 100px 0;
+    text-align: center;
+}
+.container-about{
+    width: 100%;
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 /* Establecemos margen y tamaño de la etiqueta h2 */
 .container-about-title h2{
@@ -202,43 +211,82 @@ img[alt="portfolio"]{
 }
 .container-about-text{
     border: 2px dashed black;
-    /* position: relative;
-    text-align: center; */
+    position: relative;
+    width: 100%;
+    height: 260px;
+    min-height: 1px;
     margin-right: -15px;
     margin-left: -15px;
-    display: flex;
-    flex-wrap: wrap;
+    text-align: center!important;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: inline-block;
 }
 
 .text-col-1{
-    border: 2px dashed black;
-    /* top:0;
-    left: 0;
-    display: inline-block;
+    border: 2px dashed white;
+    top:0;
+    left:0;
     position: absolute;
-    width: 380px;
-    height: 196px; */
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    max-width: 31%;
+    text-align: left;
+    margin-left: 189px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    /*  cuando a posicion padre es flex flex: 0 0 33.333333%;
+    max-width: 33.333333%; */
 
 }
 .text-col-2{
-    border: 2px dashed black;
+    border: 2px dashed white;
     top:0;
-    right: 0;
-    display: inline-block;
+    right:0;
     position: absolute;
-    width: 380px;
-    height: 196px;
+    max-width: 30%;
+    text-align: left;
+    margin-right: 189px;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
-.container-about-text a{
+
+.text-col-3{
+    border: 2px dashed white;
+    top:198px;
+    position: relative;
+    max-width: 66%;
+    margin-left: 189px;
+    margin-right: 189px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size:20px;
+    height: 22%;
+
+    
+
+}
+.text-col-3 a{
     text-decoration: none;
-    text-align: center;
+    color: #fff;
+   
+    
+    border-radius: 3px;
+    border: solid 2px #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    
+}
+.text-col-3 i {
+    margin-top: 15px;
 }
 .container-about-text p{
     
-    
+    line-height: 30px;
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 1rem;
