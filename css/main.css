@@ -281,7 +281,7 @@ img[alt="portfolio"]{
     line-height: 1.5;
     
 }
-.text-col-3 i {
+.link-download {
     margin-top: 15px;
 }
 .container-about-text p{
@@ -293,3 +293,5 @@ img[alt="portfolio"]{
     
     
 }
+/*****************************************/
+/* Estilos para la seccion contact me */
