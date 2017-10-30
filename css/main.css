@@ -14,7 +14,11 @@ body{
        font-weight: 700;
        text-transform: uppercase;
        text-align: center;
-   }
+}
+.form-display-block {
+    display: block;
+    width: 100%;
+}
 
 /*Estilo para el Header*/
 header{
@@ -126,6 +130,7 @@ li>a:hover{
     max-width: 250px;
     margin: 25px auto 30px;
     padding: 0;
+    /*propiedad que permite centrar elemento */
     text-align: center;
     border: none; 
     border-top: solid 5px;
@@ -139,12 +144,14 @@ li>a:hover{
     overflow: hidden;
 } */
 hr::after{
+    /*Font Awesome es una fuente web que contiene todos los iconos del framework Twitter Bootstrap, y ahora muchos más. Si bien la implementación en Bootstrap está diseñada para ser utilizada con el <i>elemento (Bootstrap v2), es posible que desee utilizar estos íconos en otros elementos.*/
     font-family: FontAwesome;
     font-size: 2em;
     position: relative;
     top: -.6em;
     display: inline-block;
     padding: 0 .25em;
+    /*codigo del icono de estrella de FontAsome */
     content: '\f005';
 }
 
@@ -333,4 +340,37 @@ img[alt="portfolio"]{
 
 .form-contact{
     margin-top: 0em;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eee;
+}
+
+label{
+    position: relative;
+    top: 2em;
+    font-size: .85em;
+    line-height: 1.7647em;
+    height: 24px;
+    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eee;
+    /* opacity: 0; */
+    z-index: 0;
+}
+#name{
+    position: relative;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da; 
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    z-index:1;
 }
