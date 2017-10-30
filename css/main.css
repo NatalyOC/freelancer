@@ -19,15 +19,35 @@ body{
     display: block;
     width: 100%;
 }
+.line-start-black{
+    border-color: black;
+    max-width: 250px;
+    margin: 25px auto 30px;
+    padding: 0;
+    /*propiedad que permite centrar elemento */
+    text-align: center;
+    border: none; 
+    border-top: solid 5px;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible; 
+}
+.line-start-black::after{
+    /*Font Awesome es una fuente web que contiene todos los iconos del framework Twitter Bootstrap, y ahora muchos más. Si bien la implementación en Bootstrap está diseñada para ser utilizada con el <i>elemento (Bootstrap v2), es posible que desee utilizar estos íconos en otros elementos.*/
+    font-family: FontAwesome;
+    font-size: 2em;
+    position: relative;
+    top: -.6em;
+    display: inline-block;
+    padding: 0 .25em;
+    /*codigo del icono de estrella de FontAsome */
+    content: '\f005';
+}
 
 /*Estilo para el Header*/
 header{
-   border:2px dashed blue;
+  
    position:fixed;
-   /* width: 100%;
-   top: 0;
-   left:0;
-   height: 108px; */
    border-left-width: 0px;
    border-right-width: 0px;
    border-top-width: 0px;
@@ -43,30 +63,33 @@ header{
    background: #2c3e50;
 }
 nav{
-       border:1px dashed blue;
+       
        width: 100%;
        height: 100%; 
        position: relative;
        padding: 25px 25px 16px 16px
 }
 .logo-header{
-        border:1px dashed red; 
+       
        position: absolute;
        height: 100%;
-       left:20%;
+       left:5%;
        top:0;
        font-size:1.2em;
        padding-right: 15px;
        padding-left: 15px;
        margin-right: auto;
        margin-left: auto;
-
-       /* https://www.cssblog.es/css-position-propiedad/ */
+}
+h1{
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 .header-main{
        /* border:1px dashed red; */
        position: absolute;
        right: 7%;
+       bottom:0;
        
        
 }
@@ -88,12 +111,17 @@ top:50px;
       padding-left: .5rem;
       
 }
+
 /*Establecemos el color blanco para la etiqueta a del menú por medio de selectores*/
 .header-main a{
     color:#fff;
 }
 h1>a{
-    top:50px;
+    /* padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    line-height: inherit;
+    white-space: nowrap; */
     text-decoration: none;
     color:#fff;
 }
@@ -108,7 +136,7 @@ li>a:hover{
 }
 /* Estilos para la seccion principal */
 #content-main{
-    border: 2px dashed blueviolet;
+    
     padding-top: 200px;
     padding-bottom: 100px;
     text-align: center;
@@ -125,7 +153,8 @@ li>a:hover{
     display: block;
 }
 /* Establecemos una linea intermedia por medio del selector de clase */
-.container-main-text hr{
+
+.line-start-white{
     border-color: #fff;
     max-width: 250px;
     margin: 25px auto 30px;
@@ -138,12 +167,7 @@ li>a:hover{
     height: 0;
     overflow: visible; 
 }
-/* hr{
-    display: block;
-    unicode-bidi: isolate;
-    overflow: hidden;
-} */
-hr::after{
+.line-start-white::after{
     /*Font Awesome es una fuente web que contiene todos los iconos del framework Twitter Bootstrap, y ahora muchos más. Si bien la implementación en Bootstrap está diseñada para ser utilizada con el <i>elemento (Bootstrap v2), es posible que desee utilizar estos íconos en otros elementos.*/
     font-family: FontAwesome;
     font-size: 2em;
@@ -154,20 +178,15 @@ hr::after{
     /*codigo del icono de estrella de FontAsome */
     content: '\f005';
 }
-
+/******************************************/
 /* Estilos para la seccion portafolio */
-
-
-
-
 /* Establecemos el espacio de relleno para la seccion portafolio*/
 #content-portfolio{
     padding: 100px 0;
 }
 .container-portfolio{
-    border: 2px dashed blueviolet;
+  
     width: 100%;
-   
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -180,7 +199,7 @@ hr::after{
     margin: 0;
 }
 .container-portfolio-img{
-    border: 2px dashed black;
+    
     margin:0 0 30px;
     padding-right: 15px;
     padding-left: 15px;
@@ -190,7 +209,6 @@ hr::after{
 .container-portfolio:last-child figure{
     display: inline-block;
     text-align: center;
-    border: 2px dashed black;
     margin-bottom: 30px;
     margin-right: 0px;
     margin-left: 0px;
@@ -202,10 +220,11 @@ hr::after{
 
 /* Establecemos el tamaño de las imagenes*/
 img[alt="portfolio"]{
-    border: 2px dashed black;
+    
     width: 350px;
     height: 250px;
 } 
+
 
 /*****************************************/
 /* Estilos para la seccion about */
@@ -230,7 +249,6 @@ img[alt="portfolio"]{
     margin: 0;
 }
 .container-about-text{
-    border: 2px dashed black;
     position: relative;
     width: 100%;
     height: 260px;
@@ -238,13 +256,10 @@ img[alt="portfolio"]{
     margin-right: -15px;
     margin-left: -15px;
     text-align: center!important;
-    /* display: flex;
-    flex-wrap: wrap; */
     display: inline-block;
 }
 
 .text-col-1{
-    border: 2px dashed white;
     top:0;
     left:0;
     position: absolute;
@@ -253,26 +268,22 @@ img[alt="portfolio"]{
     margin-left: 189px;
     padding-left: 15px;
     padding-right: 15px;
-    
-    /*  cuando a posicion padre es flex flex: 0 0 33.333333%;
-    max-width: 33.333333%; */
-
 }
 .text-col-2{
-    border: 2px dashed white;
-    top:0;
-    right:0;
-    position: absolute;
-    max-width: 30%;
     text-align: left;
     margin-right: 189px;
+    max-width: 30%;
+    position: absolute;
     padding-left: 15px;
     padding-right: 15px;
-
+    right:0;
+    top:0;
+  
+    
 }
 
 .text-col-3{
-    border: 2px dashed white;
+    
     top:198px;
     position: relative;
     max-width: 66%;
@@ -282,9 +293,6 @@ img[alt="portfolio"]{
     padding-right: 15px;
     font-size:20px;
     height: 22%;
-
-    
-
 }
 .text-col-3 a{
     text-decoration: none;
@@ -297,18 +305,15 @@ img[alt="portfolio"]{
     padding-bottom: 8px;
     font-size: 1.25rem;
     line-height: 1.5;
-    
 }
 .link-download {
     margin-top: 15px;
 }
 .container-about-text p{
-    
     line-height: 30px;
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 1rem;
-    
     
 }
 /*****************************************/
