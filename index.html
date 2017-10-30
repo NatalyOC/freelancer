@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Freelancer</title>
+    <!-- Enlazando iconos para la web por medio de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Enlazando fondo Montserrat para la web por medio de FontsGoogle -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+    <!-- Enlazando fondo Lato para la web por medio de FontsGoogle -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
+    <!-- Enlazando pagina de estilos para html -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- Encabezado -->
     <header>
+        <!-- Navegador -->
         <nav>
             <div class="logo-header text-uppercase-bold">
                <h1><a class="text-uppercase-bold" href="">start bootstrap</a></h1> 
@@ -30,7 +35,7 @@
             </div>
         </nav>
     </header>
-    <!-- Contenido -->
+    <!-- Contenido Principal-->
     <section id="content-main">
         <div class="container-main">
             <figure>
@@ -43,6 +48,7 @@
             </div>
         </div>
     </section>
+    <!-- Contenido Portafolio -->
     <section id="content-portfolio">
         <div class="container-portfolio">
             <div class="container-portfolio-text">
@@ -75,6 +81,7 @@
             </div>
         <div>
     </section>
+    <!-- Contenido Acerca de -->
     <section id="content-about">
         <div class="container-about">
             <div class="container-about-title">
@@ -99,6 +106,7 @@
         </div>
 
     </section>
+    <!-- Contenido Contacto -->
     <section id="content-contact">
         <div class="container-contact">
             <div class="container-contact-title">
@@ -108,22 +116,21 @@
             <div class="container-contact-form">
                 <!-- El elemento HTML form (<form>) representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web. -->
                 <form action="form-contact">
-                    <div class="form-name">
-                            <!-- El Elemento HTML <label> representa una etiqueta para un elemento en una interfaz de usuario.  -->
-                            <label class="form-display-block" for="name">Name</label>
-                            <input type="text" id="name" placeholder="Name"/>            
+                    <div class="form">
+                            <!-- La etiqueta <input> especifica un campo de entrada donde el usuario puede ingresar datos. -->
+                            <input class="form-input" type="text" id="name" placeholder="Name"/>            
                     </div>
-                    <div class="form-email">
-                            <label class="form-display-block" for="mail">Email Address</label>
-                            <input class="form-display-block" type="email" id="mail" />
+                    <div class="form">
+                            <input class="form-input" type="text" id="mail" placeholder="Email Address"/>
                     </div>
-                    <div class="form-phone">
-                            <label class="form-display-block" for="phone">Phone Number</label>
-                            <input class="form-display-block" type="phone" id="mail" />
+                    <div class="form">
+                            <input class="form-input" type="text" id="mail" placeholder="Phone Number"/>
                     </div>
-                    <div class="form-message">
-                            <label class="form-display-block" for="msg">Message</label>
-                            <textarea class="form-display-block" id="msg"></textarea>
+                    <div class="form">
+                            <textarea class="form-input" id="msg" placeholder="Message"></textarea>
+                    </div>
+                    <div class="btn">
+                            <button type="submit" id="btnsend">Send</button>
                     </div>
                 </form>
             </div>

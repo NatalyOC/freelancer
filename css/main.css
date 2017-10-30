@@ -1,4 +1,8 @@
 /* setear archivos */
+*{
+    margin: 0;
+    padding:0;
+}
 /*Establecemos el ancho y tipo de letra por medio de el selector de etiqueta*/
 body{
     /* hacemos que el ancho espeficado sea equivalente al ancho total */
@@ -26,9 +30,7 @@ body{
     padding: 0;
     /*propiedad que permite centrar elemento */
     text-align: center;
-    border: none; 
     border-top: solid 5px;
-    box-sizing: content-box;
     height: 0;
     overflow: visible; 
 }
@@ -134,12 +136,14 @@ li>a{
 li>a:hover{
     color:#18bc9c;
 }
+
+/********************************************/
 /* Estilos para la seccion principal */
 #content-main{
-    
+   
     padding-top: 200px;
     padding-bottom: 100px;
-    text-align: center;
+    text-align: center; 
     color: #fff;
     background: #18bc9c;
     width: 100%;
@@ -351,35 +355,45 @@ img[alt="portfolio"]{
     border-bottom: 1px solid #eee;
 }
 
-label{
-    position: relative;
-    top: 2em;
-    font-size: .85em;
-    line-height: 1.7647em;
-    height: 24px;
-    margin: 0;
-    margin-bottom: 0;
-    padding-bottom: .5em;
-    border-bottom: 1px solid #eee;
-    /* opacity: 0; */
-    z-index: 0;
-}
-#name{
-    position: relative;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-image: none;
-    background-clip: padding-box;
-    border: 1px solid #ced4da; 
-    border-radius: .25rem;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    z-index:1;
-}
+/* Establecemos estilo al input por medio de selector id*/
 
+.form-input{
+    
+        position: relative;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-image: none;
+        background-clip: padding-box;
+        border: none;
+        border-radius: .25rem;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        z-index:1;
+
+}
+.form{
+    position: relative;
+    margin-bottom: 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+#btnsend{
+    font-weight: 700;
+    color: #fff;
+    border-color: #18bc9c;
+    background-color: #18bc9c;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+.btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 /**************************************************************/
 /* Estilos para el footer*/
 footer{
@@ -401,13 +415,13 @@ footer{
 }
  
 .footer-above{
-    border: 2px dashed red;
+    
     padding-top: 50px;
     background-color: #2c3e50;
     
 }
 .footer-right{
-    border: 2px dashed red;
+    
     display: inline-block; 
     margin-bottom: 50px;
     padding-right: 15px;
@@ -418,7 +432,7 @@ footer{
 }
 
 .footer-center{
-    border: 2px dashed red;
+   
     display: inline-block; 
     margin-bottom: 50px;
     padding-right: 15px;
@@ -440,7 +454,7 @@ h3{
 }
 .footer-center li{
     display: inline-block;
-    border: 2px dashed red;
+   
     margin-right: 5px;
 }
 .red-social{
@@ -453,13 +467,9 @@ h3{
     border: 2px solid #fff;
     border-radius: 100%;
 }
-/* .fa .fa-facebook::before {
-    content: "\f09a";
-    font-family: FontAwesome;
-} */
 
 .footer-left{
-    border: 2px dashed red;
+    
     display: inline-block; 
     margin-bottom: 50px;
     padding-right: 15px;
