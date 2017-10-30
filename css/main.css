@@ -5,24 +5,30 @@
 }
 /*Establecemos el ancho y tipo de letra por medio de el selector de etiqueta*/
 body{
-    /* hacemos que el ancho espeficado sea equivalente al ancho total */
+    /* Establecemos que el ancho especificado sea equivalente al ancho total */
     box-sizing: border-box;
-    /* establecemos el tipo de letra */
+    /* Establecemos el tipo de letra lato*/
     font-family: 'Lato', sans-serif;
+    /* Establecemos alineamiento por defecto a la izquierda*/
     text-align: left;
     
 }
 /* Clase reutilizable*/
+/* Establecemos el peso de letra, tipo de letra:Montserrat, mayuscula y centrado del elemento
+Por medio del selector de clase.*/
 .text-uppercase-bold{
        font-family: 'Montserrat';
        font-weight: 700;
        text-transform: uppercase;
        text-align: center;
 }
+/* Establecemos el valor de bloque para los input
+Por medio del selector de clase.*/
 .form-display-block {
     display: block;
     width: 100%;
 }
+/*Establecemos la linea horizontal que acompaña a la estrella*/
 .line-start-black{
     border-color: black;
     max-width: 250px;
@@ -34,10 +40,11 @@ body{
     height: 0;
     overflow: visible; 
 }
-.line-start-black::after{
+/*Añadimos el icono de estrella al elemento br por medio del pseudoelemento:before*/
+.line-start-black::before{
     /*Font Awesome es una fuente web que contiene todos los iconos del framework Twitter Bootstrap, y ahora muchos más. Si bien la implementación en Bootstrap está diseñada para ser utilizada con el <i>elemento (Bootstrap v2), es posible que desee utilizar estos íconos en otros elementos.*/
     font-family: FontAwesome;
-    font-size: 2em;
+    font-size: 2.1em;
     position: relative;
     top: -.6em;
     display: inline-block;
@@ -64,6 +71,7 @@ header{
    left:0;
    background: #2c3e50;
 }
+/*Establecemos dimensiones para el elemento nav */
 nav{
        
        width: 100%;
@@ -71,6 +79,7 @@ nav{
        position: relative;
        padding: 25px 25px 16px 16px
 }
+/*Establecemos dimensiones para el elemento izquierdo de barra de navegación */
 .logo-header{
        
        position: absolute;
@@ -83,31 +92,31 @@ nav{
        margin-right: auto;
        margin-left: auto;
 }
+/*Establecemos dimensiones para el elemento <start bootstrap>  */
 h1{
     margin-bottom: 0px;
     margin-top: 0px;
 }
+/*Establecemos posicion para el contenedor de la lista de navegacion izquerda  */
 .header-main{
-       /* border:1px dashed red; */
+     
        position: absolute;
        right: 7%;
        bottom:0;
        
        
 }
+/*Establecemos posicion y estilo al elemento ul  */
 ul{
 list-style: none;
 top:50px;
 }
+/*Establecemos posicion para la lista de navegacion  */
 .header-main li{
-          
-      /* border: 1px dashed black; */
+       
       display: inline-block;
-      
-      list-style: none;
       left: 0;
       top:50px;
-      /* text-decoration: none; */
       color:#fff;
       padding-right: .5rem;
       padding-left: .5rem;
@@ -118,15 +127,14 @@ top:50px;
 .header-main a{
     color:#fff;
 }
+/*Establecemos estilo al elemento enlace de la barra de navegacion de la parte izquierda */
 h1>a{
-    /* padding-top: .3125rem;
-    padding-bottom: .3125rem;
-    margin-right: 1rem;
-    line-height: inherit;
-    white-space: nowrap; */
+
     text-decoration: none;
     color:#fff;
 }
+/*Establecemos estilo y posicion  al elemento enlace de la barra de navegacion de la parte derecha*/
+
 li>a{
     top:50px;
     text-decoration: none;
@@ -139,6 +147,8 @@ li>a:hover{
 
 /********************************************/
 /* Estilos para la seccion principal */
+/*Establecemos estilo y posicion a la seccion principal por medio de selector id */
+
 #content-main{
    
     padding-top: 200px;
@@ -152,6 +162,8 @@ li>a:hover{
     width: 100%;
    
 }
+/*Establecemos estilo al elemento span */
+
 .title{
     font-size: 4.75em;
     display: block;
@@ -171,7 +183,8 @@ li>a:hover{
     height: 0;
     overflow: visible; 
 }
-.line-start-white::after{
+/*Añadimos el icono de estrella al elemento br por medio del pseudoelemento:before*/
+.line-start-white::before{
     /*Font Awesome es una fuente web que contiene todos los iconos del framework Twitter Bootstrap, y ahora muchos más. Si bien la implementación en Bootstrap está diseñada para ser utilizada con el <i>elemento (Bootstrap v2), es posible que desee utilizar estos íconos en otros elementos.*/
     font-family: FontAwesome;
     font-size: 2em;
@@ -184,10 +197,12 @@ li>a:hover{
 }
 /******************************************/
 /* Estilos para la seccion portafolio */
+
 /* Establecemos el espacio de relleno para la seccion portafolio*/
 #content-portfolio{
     padding: 100px 0;
 }
+/* Establecemos el espacio de relleno,margen y centrado para la contenido del portafolio*/
 .container-portfolio{
   
     width: 100%;
@@ -198,10 +213,12 @@ li>a:hover{
     text-align: center;
 
 }
+/* Establecemos tamaño y margen para elemento h2 de la seccion de portafolio*/
 .container-portfolio-text h2{
     font-size: 3em;
     margin: 0;
 }
+/* Establecemos el espacio de relleno y margen para las imagenes*/
 .container-portfolio-img{
     
     margin:0 0 30px;
@@ -210,6 +227,7 @@ li>a:hover{
     
     
 }
+/* Establecemos estilos para la contenedor de imagenes por medio pseudoclase :last-child, representa cualquier elemento que es el último hijo de un elemento padre.*/
 .container-portfolio:last-child figure{
     display: inline-block;
     text-align: center;
@@ -232,6 +250,8 @@ img[alt="portfolio"]{
 
 /*****************************************/
 /* Estilos para la seccion about */
+
+
 #content-about
 {
     color: #fff;
@@ -355,7 +375,7 @@ img[alt="portfolio"]{
     border-bottom: 1px solid #eee;
 }
 
-/* Establecemos estilo al input por medio de selector id*/
+/* Establecemos estilo al input por medio de selector clase*/
 
 .form-input{
     
@@ -380,6 +400,7 @@ img[alt="portfolio"]{
     padding-bottom: 12px;
     border-bottom: 1px solid #eee;
 }
+/*Establecemos estilo al boton Send*/
 #btnsend{
     font-weight: 700;
     color: #fff;
@@ -390,6 +411,7 @@ img[alt="portfolio"]{
     font-size: 1.25rem;
     line-height: 1.5;
 }
+/**Establecemos dimensiones para el contenedor del boton Send*/
 .btn{
     margin-top: 20px;
     margin-bottom: 20px;
